@@ -45,19 +45,19 @@ body{
   margin-top: 1em;
   background: rgba(0, 0, 0, 0.41);
 }
-.logo {
-  border-top: 5px solid#fff;
-  border-bottom: 5px solid#fff;
-  width: 28%;
-  margin: 15em auto 0;
-}
-.logo a {
-  font-size: 5em;
-  text-transform: capitalize;
-  text-decoration: none;
-  color:#fff;
-  	font-family: 'Lobster', cursive;
-}
+/*.logo {*/
+  /*border-top: 5px solid#fff;*/
+  /*border-bottom: 5px solid#fff;*/
+  /*width: 28%;*/
+  /*margin: 15em auto 0;*/
+/*}*/
+/*.logo a {*/
+  /*font-size: 5em;*/
+  /*text-transform: capitalize;*/
+  /*text-decoration: none;*/
+  /*color:#fff;*/
+  	/*font-family: 'Lobster', cursive;*/
+/*}*/
 .top-menu {
    float:left;
      padding-top: 0.3em;
@@ -1033,12 +1033,12 @@ a.button1 {
   float: left;
   width: 25%;
 }
-.logo a {
-  font-size: 3em;
-}
-.logo {
-  margin: 7em auto 0;
-}
+/*.logo a {*/
+  /*font-size: 3em;*/
+/*}*/
+/*.logo {*/
+  /*margin: 7em auto 0;*/
+/*}*/
 .header {
   min-height: 375px;
 }
@@ -1329,12 +1329,12 @@ color:#fff;
 .search {
  width: 30%;
 }
-.logo {
-  margin: 7em auto 0;
-}
-.logo a {
-  font-size: 2em;
-}
+/*.logo {*/
+  /*margin: 7em auto 0;*/
+/*}*/
+/*.logo a {*/
+  /*font-size: 2em;*/
+/*}*/
 .header-grid img {
  border: 6px solid #eee;
  width: 80%;
@@ -1751,12 +1751,12 @@ a.b-home {
 .logo a {
   font-size: 1.7em;
 }
-.logo {
-  margin: 3em auto 0;
-  width: 50%;
-  border-top: 2px solid#fff;
-  border-bottom: 2px solid#fff;
-}
+/*.logo {*/
+  /*margin: 3em auto 0;*/
+  /*width: 50%;*/
+  /*border-top: 2px solid#fff;*/
+  /*border-bottom: 2px solid#fff;*/
+/*}*/
 .search {
   width: 50%;
   margin: 1em 1em;
