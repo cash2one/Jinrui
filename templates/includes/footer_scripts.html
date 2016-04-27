@@ -1,4 +1,4 @@
-{% load mezzanine_tags %}
+{% load mezzanine_tags staticfiles%}
 
 {% editable_loader %}
 
@@ -15,3 +15,6 @@ _gaq.unshift(['_setAccount', '{{ settings.GOOGLE_ANALYTICS_ID }}']);
 })(document, 'script');
 {% endif %}
 </script>
+<!-- Scrolling Nav JavaScript -->
+<script src="{% static "js/jquery.easing.min.js" %}"></script>
+<script src="{% static "js/scrolling-nav.js" %}"></script>
