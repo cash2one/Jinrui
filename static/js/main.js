@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	
+
 
   $("div.blog-post").hover(
     function() {
@@ -12,6 +12,7 @@ $(document).ready(function() {
   );
 
   $('.flexslider').flexslider({
+        slideshowSpeed: 3000,
 		prevText: '',
 		nextText: ''
 	});
@@ -30,7 +31,7 @@ $(document).ready(function() {
 
   $('#Container').mixItUp();
 
-  
+
 
   $(document).ready(function() {
       $(".fancybox").fancybox();
