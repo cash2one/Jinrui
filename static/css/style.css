@@ -13,6 +13,12 @@ body,p,a,h1 {
     background-color: transparent;
 }
 
+.navbar-default .navbar-nav > .active > a {
+    background-image: linear-gradient(to bottom, #f70 0%, #f78e21 100%);
+    background-repeat: repeat-x;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.075) inset;
+}
+
 .navbar-text {
     font-size:1em;
 }
