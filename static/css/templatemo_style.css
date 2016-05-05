@@ -710,14 +710,7 @@ textarea {
 
 
 
-/*-- Slider --*/
 
-# slider {
-  overflow: hidden;
-}
-
-
-/*-- End Slider --*/
 
 
 
@@ -895,22 +888,6 @@ footer {
 .subscribeForm {
   position: relative;
   display: inline-block;
-}
-
-.subscribe-form input[type="submit"] {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 34px;
-  height: 34px;
-  background: url(../images/subscribe-icon.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  color: transparent;
-  background-color: transparent;
-  content: '';
-  margin-top: 0;
-  border: 0;
 }
 
 .subscribe-form input#subscribe {
