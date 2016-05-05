@@ -1,23 +1,123 @@
 .navbar-default .navbar-brand {
-  color: #f78e21;
+    color: #f78e21;
+    padding: 0px 20px;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
-  background-color: transparent;
+    color: #5e5e5e;
+    background-color: transparent;
 }
 
 #toTop {
-	display: none;
-	text-decoration: none;
-	position: fixed;
-	bottom: 10px;
-	right: 10px;
-	overflow: hidden;
-	width: 48px;
-	height: 48px;
-	border: none;
-	text-indent: 100%;
-	background: url("../img/to-top2.png") no-repeat 0px 0px;
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    overflow: hidden;
+    width: 48px;
+    height: 48px;
+    border: none;
+    text-indent: 100%;
+    background: url("../img/to-top2.png") no-repeat 0px 0px;
+}
+
+.about-section h1 {
+    font-size: 2.5em;
+    color: #000;
+    margin: 0 17px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    text-align: left;
+}
+
+.about-grids {
+    margin-top: 3em;
+}
+
+.about-grids p {
+    font-size: 1.6em;
+    text-align: left;
+    font-weight: 400;
+    line-height: 2em;
+}
+
+.services-section h1 {
+    font-size: 2.5em;
+    color: #000;
+    margin: 0 17px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    text-align: left;
+}
+
+.services-grids {
+    margin-top: 3em;
+}
+
+.services-grids p {
+    font-size: 1.5em;
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.contact-section h1 {
+    font-size: 2.5em;
+    color: #000;
+    margin: 0 17px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    text-align: left;
+}
+
+.cont ul li {
+    display: inline-block;
+}
+
+.cont ul {
+    margin-top: 4em;
+}
+
+.phone {
+    width: 40px;
+    height: 40px;
+    background: url("../img/img-sprite1.png") no-repeat -220px 0px;
+    display: inline-block;
+}
+
+.smartphone {
+    width: 40px;
+    height: 40px;
+    background: url("../img/img-sprite1.png") no-repeat -260px 0px;
+    display: inline-block;
+}
+
+.message {
+    width: 40px;
+    height: 40px;
+    background: url("../img/img-sprite1.png") no-repeat -300px 6px;
+    display: inline-block;
+}
+
+.cont ul li p {
+    font-size: 1.5em;
+}
+
+.cont ul li a {
+    width: 100%;
+    display: block;
+    font-size: 1.5em;
+    line-height:1.5em;
+    text-decoration: none;
+    color: #666;
+}
+
+.cont ul li a:hover {
+    color: #f2af00;
+}
+
+footer {
+    margin-top:0px;
 }

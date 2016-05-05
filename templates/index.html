@@ -20,10 +20,20 @@
     <!-- About Section -->
     <section id="about" class="about-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>关于我们</h1>
+            <h1>关于我们</h1>
+
+            <div class="about-grids">
+                <div class="col-md-5 about-img wow bounceInRight animated" data-wow-delay="0.4s"
+                     style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <img src="{% static "img/about-us-index.png" %}" class="img-responsive" alt="/">
                 </div>
+                <div class="col-md-7 about-grid wow bounceInLeft animated" data-wow-delay="0.4s"
+                     style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <p>
+                        深圳市金锐生物科技有限公司是专注于畜牧业领域的高通量测序和生物信息分析服务公司，拥有一流的软硬件设施平台和一支经验丰富的专业人才团队，致力于提供国内领先的高通量测序、生物信息分析及相关技术转化应用的科研服务。金锐生物聚焦于分子标记辅助育种、微生物组学和微生物生态制剂等前沿领域，将秉承专业、高效、高质量的服务理念，与您一同探索高通量测序技术在畜牧业领域的应用，共创科研成果及技术转化应用的辉煌。</p>
+
+                </div>
+                <div class="clearfix"></div>
             </div>
         </div>
     </section>
@@ -31,10 +41,28 @@
     <!-- Services Section -->
     <section id="services" class="services-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>业务介绍</h1>
+            <h1>业务介绍</h1>
+
+            <div class="services-grids">
+                <div class="col-md-4 news-grid wow bounceInLeft animated" data-wow-delay="0.4s"
+                     style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <img src="{% static "img/service01-index.gif" %}" class="img-responsive" alt="/">
+                    <h4><a href="#">基因组测序分析</a></h4>
+                    <p>内容空缺 </p>
                 </div>
+                <div class="col-md-4 news-grid wow fadeInDown Big animated animated" data-wow-delay="0.4s">
+                    <img src="{% static "img/service02-index.gif" %}" class="img-responsive" alt="/">
+                    <h4><a href="#">微生物测序分析</a></h4>
+                    <p>微生物组学结合高通测序，研究对象十分广泛，小到单个菌达到某个生态环境，如鉴定某个古菌，检测动物瘤胃、
+                        肠道微生物菌群，分析某一植物根际微生物等，这些分析方法包括单菌、16S、宏基因组等 </p>
+                </div>
+                <div class="col-md-4 news-grid wow bounceInRight animated" data-wow-delay="0.4s"
+                     style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <img src="{% static "img/service03-index.gif" %}" class="img-responsive" alt="/">
+                    <h4><a href="#">转录组测序分析</a></h4>
+                    <p>内容空缺 </p>
+                </div>
+                <div class="clearfix"></div>
             </div>
         </div>
     </section>
@@ -42,12 +70,34 @@
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>联系我们</h1>
-                </div>
+            <h1>联系我们</h1>
+            <div class="col-md-4 cont wow bounceInRight animated" data-wow-delay="0.4s"
+                 style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                <ul>
+                    <li><i class="phone"></i></li>
+                    <li><p>1-000-000-0000</p>
 
+                        <p>1-000-000-0000</p></li>
+                </ul>
             </div>
+            <div class="col-md-4 cont wow bounceInUp animated" data-wow-delay="0.4s"
+                 style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                <ul>
+                    <li><i class="smartphone"></i></li>
+                    <li><p>Seventh Avenue</p>
+
+                        <p> Chelsea, Manhattan</p></li>
+                </ul>
+            </div>
+            <div class="col-md-4 cont wow bounceInLeft animated" data-wow-delay="0.4s"
+                 style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                <ul>
+                    <li><i class="message"></i></li>
+                    <li><a href="mailto:example@mail.com">bcdefg@hijs.dfh</a>
+                        <a href="mailto:example@mail.com">fjashfaf@jkfs.ckd</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
         </div>
     </section>
 {% endblock %}
