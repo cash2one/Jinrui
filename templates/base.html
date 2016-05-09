@@ -46,7 +46,7 @@
             window.scrollTo(0, 1);
         } </script>
         <script src="{% static "js/jquery-1.11.0.min.js" %}"></script>
-        <script src="{% static "js/bootstrap.js" %}"></script>
+        <script src="{% static "js/bootstrap.min.js" %}"></script>
         {% block extra_js %}
             <script src="{% static "js/move-top.js" %}"></script>
             <script src="{% static "js/easing.js" %}"></script>
@@ -66,12 +66,15 @@
             </script>
             <!---/End-Animation---->
         {% endblock %}
+        <!-- Slides JavaScript -->
+        <script src="{% static "js/plugins.js" %}"></script>
+        <script src="{% static "js/main.js" %}"></script>
     {% endcompress %}
 
     <!--[if lt IE 9]>
-<script src="{% static "js/html5shiv.js" %}"></script>
-<script src="{% static "js/respond.min.js" %}"></script>
-<![endif]-->
+    <script src="{% static "js/html5shiv.js" %}"></script>
+    <script src="{% static "js/respond.min.js" %}"></script>
+    <![endif]-->
 
     {% block extra_head %}{% endblock %}
 </head>
@@ -88,7 +91,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            {% if settings.SITE_TITLE %}<a class="navbar-brand" href="/"><img src="{% static "img/jinrui-logo.gif" %}"></a>{% endif %}
+            {% if settings.SITE_TITLE %}
+                <a class="navbar-brand" href="/"><img src="{% static "img/jinrui-logo.gif" %}"></a>{% endif %}
             {% if settings.SITE_TAGLINE %}<p class="navbar-text visible-lg">{{ settings.SITE_TAGLINE }}</p>{% endif %}
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -134,13 +138,11 @@
         {% page_menu "pages/menus/footer.html" %}
         <div class="footer-bottom wow bounceInRight animated" data-wow-delay="0.4s"
              style="visibility: visible; -webkit-animation-delay: 0.4s;">
-                <p>Copyright © 2016 <a href="#">深圳金锐生物科技</a></p>
+            <p>Copyright © 2016 <a href="#">深圳金锐生物科技</a></p>
         </div>
     </div>
 </footer>
-<!-- Slides JavaScript -->
-<script src="{% static "js/plugins.js" %}"></script>
-<script src="{% static "js/main.js" %}"></script>
+
 {% include "includes/footer_scripts.html" %}
 </body>
 </html>
