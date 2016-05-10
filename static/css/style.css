@@ -98,21 +98,21 @@ body,p,a,h1 {
 .phone {
     width: 40px;
     height: 40px;
-    background: url("../img/img-sprite1.gif") no-repeat -220px 0px;
+    background: url("../img/img-sprite1.png") no-repeat -220px 0px;
     display: inline-block;
 }
 
 .smartphone {
     width: 40px;
     height: 40px;
-    background: url("../img/img-sprite1.gif") no-repeat -260px 0px;
+    background: url("../img/img-sprite1.png") no-repeat -260px 0px;
     display: inline-block;
 }
 
 .message {
     width: 40px;
     height: 40px;
-    background: url("../img/img-sprite1.gif") no-repeat -300px 6px;
+    background: url("../img/img-sprite1.png") no-repeat -300px 6px;
     display: inline-block;
 }
 
