@@ -31,60 +31,45 @@
         {% block extra_css %}
             <link rel="stylesheet" href="{% static "css/scrolling-nav.css" %}">
             <link rel="stylesheet" href="{% static "css/font-awesome.css" %}">
-            <link rel="stylesheet" href="{% static "css/templatemo_style.css" %}">
-            <link rel="stylesheet" href="{% static "css/templatemo_misc.css" %}">
             <link rel="stylesheet" href="{% static "css/flexslider.css" %}">
+            <link rel="stylesheet" href="{% static "css/jquery.fullPage.css" %}">
             <link rel="stylesheet" href="{% static "css/style.css" %}">
         {% endblock %}
     {% endcompress %}
 
     {% compress js %}
-        <script type="application/x-javascript"> addEventListener("load", function () {
-            setTimeout(hideURLbar, 0);
-        }, false);
-        function hideURLbar() {
-            window.scrollTo(0, 1);
-        } </script>
         <script src="{% static "js/jquery-1.11.0.min.js" %}"></script>
         <script src="{% static "js/bootstrap.min.js" %}"></script>
         {% block extra_js %}
-            <script src="{% static "js/move-top.js" %}"></script>
-            <script src="{% static "js/easing.js" %}"></script>
+            <script src="{% static "js/jquery.fullPage.min.js" %}"></script>
+            <!-- Slides JavaScript -->
+            <script src="{% static "js/plugins.js" %}"></script>
+            <script src="{% static "js/main.js" %}"></script>
             <script type="text/javascript">
-                jQuery(document).ready(function ($) {
-                    $(".scroll").click(function (event) {
-                        event.preventDefault();
-                        $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1200);
+                $(document).ready(function () {
+                    $('#fullpage').fullpage({
+                        anchors: ['slide-section', 'about-section', 'services-section', 'contact-section'],
+                        sectionsColor: ['#FFF', '#FFF', '#FFF', '#FFF'],
+                        navigation: true,
+                        navigationPosition: 'right',
+                        navigationTooltips: ['金锐生物', '关于我们', '业务介绍', '联系我们 ']
                     });
                 });
             </script>
-            <!--Animation-->
-            <script src="{% static "js/wow.min.js" %}"></script>
-            <link href="{% static "css/animate.css" %}" rel='stylesheet' type='text/css'/>
-            <script>
-                new WOW().init();
-            </script>
-            <!---/End-Animation---->
-        {% endblock %}
-        <!-- Slides JavaScript -->
-        <script src="{% static "js/plugins.js" %}"></script>
-        <script src="{% static "js/main.js" %}"></script>
-    {% endcompress %}
 
+        {% endblock %}
+    {% endcompress %}
     <!--[if lt IE 9]>
     <script src="{% static "js/html5shiv.js" %}"></script>
     <script src="{% static "js/respond.min.js" %}"></script>
     <![endif]-->
-
     {% block extra_head %}{% endblock %}
 </head>
 
 <body id="{% block body_id %}page-top{% endblock %}" data-spy="scroll" data-target=".navbar-fixed-top">
-
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header page-scroll">
-
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">{% trans "Toggle Navigation" %}</span>
                 <span class="icon-bar"></span>
@@ -102,37 +87,20 @@
                     <a class="page-scroll" href="#page-top"></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#about">关于我们</a>
+                    <a class="page-scroll" href="#about-section">关于我们</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#services">业务介绍</a>
+                    <a class="page-scroll" href="#services-section">业务介绍</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">联系我们</a>
+                    <a class="page-scroll" href="#contact-section">联系我们</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-
 {% block main %}{% endblock %}
-<script type="text/javascript">
-    $(document).ready(function () {
-        /*
-         var defaults = {
-         containerID: 'toTop', // fading element id
-         containerHoverID: 'toTopHover', // fading element hover id
-         scrollSpeed: 1200,
-         easingType: 'linear'
-         };
-         */
-
-        $().UItoTop({easingType: 'easeOutQuart'});
-
-    });
-</script>
-<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 <footer>
     <div class="container">
         {% page_menu "pages/menus/footer.html" %}
@@ -142,7 +110,6 @@
         </div>
     </div>
 </footer>
-
 {% include "includes/footer_scripts.html" %}
 </body>
 </html>

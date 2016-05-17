@@ -1,101 +1,87 @@
-body,p,a,h1 {font-family: "Lantinghei SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei Light","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
-.navbar-default .navbar-brand {color: #f78e21;
+body, p, a, h1 {
+    font-family: "Lantinghei SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei Light", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.navbar-default .navbar-brand {
+    color: #f78e21;
     padding: 0px 20px;
 }
+
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
     color: #5e5e5e;
     background-color: transparent;
 }
+
 .navbar-default .navbar-nav > .active > a {
     background-image: linear-gradient(to bottom, #f70 0%, #f78e21 100%);
     background-repeat: repeat-x;
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.075) inset;
 }
 .navbar-text {
-    font-size:1em;
+    font-size: 1em;
 }
 .navbar-nav {
-    font-size:1.2em;
+    font-size: 1.2em;
 }
-#toTop {
-    display: none;
-    text-decoration: none;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    overflow: hidden;
-    width: 48px;
-    height: 48px;
-    border: none;
-    text-indent: 100%;
-    background: url("../img/to-top2.png") no-repeat 0px 0px;
+#fp-nav ul li a span {
+    background: #f78e21;
 }
-.section-header {
-    text-align: center;
+#fp-nav ul li .fp-tooltip {
+    font-family: "Microsoft YaHei";
+    color: #f78e21;
 }
-.section-header h1 {
-    font-size: 2em;
-    color: #000;
-    margin: 0 17px;
-    font-weight: 400;
+#about{
+    margin-top:53px;
+    background: url("../img/about-back.jpg") no-repeat;
 }
-.about-grids {
-    margin-top: 3em;
+.about-right {
+    background-color: rgba(204,204,204,0.6);
+    font-size:1.1em;
+    line-height:3em;
+    height:100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 1px #888888;
 }
-.about-grids p {
-    font-size: 1.1em;
-    text-align: left;
-    font-weight: 400;
-    line-height: 2em;
+
+#service{
+    margin-top:53px;
+    background: url("../img/service-back.jpg") no-repeat;
 }
-.services-grids {
-    margin-top: 3em;
+
+.service01 {
+    background-color: rgba(204,255,255,0.6);
+    box-shadow:5px 5px 1px #888888;
+    height:100%;
+    margin-left: 8%;
+    padding-top: 2%;
 }
-.services-grids p {
-    font-size: 1.1em;
-    text-align: left;
-    font-weight: 400;
-    line-height: 1.5em;
+.service02 {
+    background-color: rgba(204,255,255,0.6);
+    box-shadow:5px 5px 1px #888888;
+    height:100%;
+    margin-left:4%;
+    padding-top: 2%;
 }
-.cont ul li {
-    display: inline-block;
+.service03 {
+    background-color: rgba(204,255,255,0.6);
+    box-shadow:5px 5px 1px #888888;
+    height:100%;
+    margin-left:4%;
+    margin-right:8%;
+    padding-top: 2%;
 }
-.cont ul {
-    margin-top: 4em;
+.line {
+    background: url("../img/service_04.png") repeat-x;
+    padding:200px ;
 }
-.phone {
-    width: 40px;
-    height: 40px;
-    background: url("../img/img-sprite1.png") no-repeat -220px 0px;
-    display: inline-block;
-}
-.smartphone {
-    width: 40px;
-    height: 40px;
-    background: url("../img/img-sprite1.png") no-repeat -260px 0px;
-    display: inline-block;
-}
-.message {
-    width: 40px;
-    height: 40px;
-    background: url("../img/img-sprite1.png") no-repeat -300px 6px;
-    display: inline-block;
-}
-.cont ul li p {
-    font-size: 1.1em;
-}
-.cont ul li a {
-    width: 100%;
-    display: block;
-    font-size: 1.1em;
-    line-height:1.1em;
-    text-decoration: none;
-    color: #666;
-}
-.cont ul li a:hover {
-    color: #f2af00;
+
+#contact{
+    margin-top:53px;
+    background: url("../img/contact-back.jpg") no-repeat;
 }
 footer {
-    padding:20px 0;
+    padding: 20px 0;
 }
+
+
