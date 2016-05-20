@@ -29,7 +29,6 @@
             {% endif %}
         {% endifinstalled %}
         {% block extra_css %}
-            <link rel="stylesheet" href="{% static "css/scrolling-nav.css" %}">
             <link rel="stylesheet" href="{% static "css/font-awesome.css" %}">
             <link rel="stylesheet" href="{% static "css/flexslider.css" %}">
             <link rel="stylesheet" href="{% static "css/jquery.fullPage.css" %}">
@@ -52,11 +51,11 @@
                         sectionsColor: ['#FFF', '#FFF', '#FFF', '#FFF'],
                         navigation: true,
                         navigationPosition: 'right',
-                        navigationTooltips: ['金锐生物', '关于我们', '业务介绍', '联系我们 ']
+                        navigationTooltips: ['金锐生物', '关于我们', '业务介绍', '联系我们 '],
+                        resize:true,
                     });
                 });
             </script>
-
         {% endblock %}
     {% endcompress %}
     <!--[if lt IE 9]>
@@ -102,13 +101,6 @@
 
 {% block main %}{% endblock %}
 <footer>
-    <div class="container">
-        {% page_menu "pages/menus/footer.html" %}
-        <div class="footer-bottom wow bounceInRight animated" data-wow-delay="0.4s"
-             style="visibility: visible; -webkit-animation-delay: 0.4s;">
-            <p>Copyright © 2016 <a href="#">深圳金锐生物科技</a></p>
-        </div>
-    </div>
 </footer>
 {% include "includes/footer_scripts.html" %}
 </body>
