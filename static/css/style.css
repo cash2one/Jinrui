@@ -1,50 +1,24 @@
-body, p, a, h1, h2, h3 {
-    font-family:  "Microsoft YaHei Light", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+body, p, a, h1, h2, h3, dt, dd {
+    font-family: "Microsoft YaHei Light", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
-p {
-    font-size: 1.1em;
-    text-indent: 2em;
+#slide {
+    padding-top: 25px;
 }
-h1 {
-    font-size:2.5em;
-    font-weight:bold;
-}
-h2 {
-    font-size: 1.2em;
-}
-h3 {
-    font-size:1em;
-    font-weight:bold;
-}
-@media (max-width: 768px){
-    p {
-        font-size:0.3rem;
-        font-size:2.5vw;
-    }
-    h1 {
-        font-size:1rem;
-        font-size:4vw;
-    }
-    h2 {
-        font-size:0.5rem;
-        font-size:3vw;
-    }
-    h3 {
-        font-size:0.3rem;
-        font-size:2.5vw;
-        font-weight:lighter;
-    }
+#about, #service, #contact {
+    margin-top: 54px;
 }
 
 .navbar-default .navbar-brand {
     color: #f78e21;
     padding: 0px 20px;
 }
+
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
     color: #5e5e5e;
     background-color: transparent;
 }
+
 .navbar-text {
     font-size: 1em;
 }
@@ -52,8 +26,9 @@ h3 {
 .navbar-nav {
     font-size: 1.2em;
 }
-.navbar-default .navbar-nav>li>a:hover {
-    font-weight:bold;
+
+.navbar-default .navbar-nav > li > a:hover {
+    font-weight: bold;
     text-decoration: none;
     color: #f70;
 }
@@ -61,41 +36,53 @@ h3 {
 #fp-nav ul li a span {
     background: #f78e21;
 }
+
 #fp-nav ul li .fp-tooltip {
     font-family: "Microsoft YaHei";
     color: #f78e21;
 }
 
-#about {
-    margin-top: 53px;
-    background: url("../img/about-back.jpg") no-repeat;
+.about-slogn {
+    background-color: rgba(153, 153, 204, 0.6);
+    color: #ffffff;
+    margin-top: 2%;
 }
-.about-right {
-    background-color: rgba(204, 204, 204, 0.6);
+
+.about-detail {
+    background-color: rgba(102, 204, 204, 0.6);
     border-radius: 10px;
-    box-shadow: 5px 5px 1px #888888;
-    padding:1%;
+    box-shadow: 5px 5px 1px #666699;
+    padding: 1%;
 }
-.about-right p {
-    line-height: 2.5em;
+
+.about-detail dt {
+    color: #fff;
+}
+
+.about-detail dd {
+    font-weight: bold;
+    color: #fff;
+    text-indent: 4em;
 }
 
 #service {
-    margin-top: 53px;
     background: url("../img/service-back.jpg") no-repeat;
 }
+
 .service01 {
     background-color: rgba(204, 255, 255, 0.6);
     box-shadow: 5px 5px 1px #888888;
     margin-left: 8%;
     padding-top: 2%;
 }
+
 .service02 {
     background-color: rgba(204, 255, 255, 0.6);
     box-shadow: 5px 5px 1px #888888;
     margin-left: 4%;
     padding-top: 2%;
 }
+
 .service03 {
     background-color: rgba(204, 255, 255, 0.6);
     box-shadow: 5px 5px 1px #888888;
@@ -103,14 +90,17 @@ h3 {
     margin-right: 8%;
     padding-top: 2%;
 }
+
 .content h2 {
     color: #f78e21;
     text-align: center;
-    margin:0px;
+    margin: 0px;
 }
+
 .content h3 {
     text-align: center;
 }
+
 .service02 .content h3 {
     line-height: 1.9em;
 }
@@ -118,25 +108,29 @@ h3 {
 #contact .detail {
     background-color: rgba(0, 0, 0, 0.6);
 }
+
 #contact .detail h1 {
     color: #fff;
 }
+
 #contact .detail address h2 {
     color: #fff;
-    line-height:1.2em;
-    text-indent:-3em;
-    margin-left:3em;
+    line-height: 1.2em;
+    text-indent: -3em;
+    margin-left: 3em;
 }
+
 #contact .detail address h2 a {
     color: #fff;
 }
+
 #contact {
-    margin-top: 53px;
+
     background: url("../img/contact-back.jpg") no-repeat;
 }
 
 #contact .detail address h2 a:hover {
-    font-weight:bold;
+    font-weight: bold;
     text-decoration: none;
     color: #f70;
 }
@@ -146,3 +140,87 @@ footer {
 }
 
 
+@media (max-width: 768px) {
+    #about {
+        background: top 30% left 35% url("../img/about-back.jpg") no-repeat;
+    }
+    p {
+        font-size: 2.5vw;
+    }
+
+    h1, .about-detail dt {
+        font-size: 4vw;
+    }
+
+    .about-slogn h1 {
+        font-size: 3.2vw;
+    }
+
+    h2, .about-detail dd {
+        font-size: 3vw;
+    }
+
+    .about-detail {
+        margin-top: 4%;
+    }
+
+    h3 {
+        font-size: 2.5vw;
+        font-weight: lighter;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    #about {
+        background: top 10% left 20% url("../img/about-back.jpg") no-repeat;
+    }
+
+    .about-slogns {
+        margin-top: 7%;
+    }
+
+    h1, .about-detail dt {
+        font-size: 2.2vw;
+    }
+
+    h2, .about-detail dd {
+        font-size: 1.8vw;
+    }
+
+    .about-detail dd {
+        text-indent: 2em;
+    }
+
+    .about-detail {
+        margin-top: 4%;
+    }
+
+    h3 {
+        font-size: 1vw;
+    }
+}
+
+@media (min-width: 992px) {
+    #about {
+        background: url("../img/about-back.jpg") no-repeat;
+    }
+
+    p {
+        font-size: 1.1em;
+        text-indent: 2em;
+    }
+
+    h1, dt {
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+
+    h2, dd {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1em;
+        font-weight: bold;
+    }
+}

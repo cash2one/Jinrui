@@ -8,24 +8,58 @@
         <div class="section" id="slide">
             <div class="flexslider">
                 <ul class="slides">
-                    <li><img src="{% static "img/slide1-low.jpg" %}" onload="this.src='{% static "img/slide1.jpg" %}'"
-                             alt=""/></li>
-                    <li><img src="{% static "img/slide2-low.jpg" %}" onload="this.src='{% static "img/slide2.jpg" %}'"
-                             alt=""/></li>
-                    <li><img src="{% static "img/slide3-low.jpg" %}" onload="this.src='{% static "img/slide3.jpg" %}'"
-                             alt=""/></li>
-                    <li><img src="{% static "img/slide4-low.jpg" %}" onload="this.src='{% static "img/slide4.jpg" %}'"
-                             alt=""/></li>
+                    <li ><img data-src="{% static "img/slide1.jpg" %}" alt=""/></li>
+                    <li><img data-src="{% static "img/slide2.jpg" %}" alt=""/></li>
+                    <li><img data-src="{% static "img/slide3.jpg" %}" alt=""/></li>
+                    <li><img data-src="{% static "img/slide4.jpg" %}" alt=""/></li>
                 </ul>
             </div>
         </div>
         <div class="section" id="about">
             <div class="row">
-                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-1 col-md-6 col-md-offset-2 about-left">
-                    <img data-src="{% static "img/about-left.png" %}" class="img-responsive">
+                <div class="col-xs-8 col-xs-offset-1 col-sm-7 col-sm-offset-1 col-md-6 col-md-offset-3 about-slogns">
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-0 col-sm-8 col-sm-offset-0 col-md-5 col-md-offset-0 about-slogn">
+                            <h1>聚焦于畜牧业前沿领域</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-1 col-md-6 col-md-offset-1 about-slogn">
+                            <h1>拥有一流的软硬件设施平台</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-7 col-md-offset-2 about-slogn">
+                            <h1>一支经验丰富的专业人才队伍</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-3 col-sm-8 col-sm-offset-3 col-md-8 col-md-offset-3 about-slogn">
+                            <h1>为您提供专业、高效、高质科研服务</h1>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-md-2 about-right">
-                    <p>深圳金锐生物科技有限公司是专注于畜牧业领域的高通量测序和生物信息分析服务公司，拥有一流的软硬件设施平台和一支经验丰富的专业人才团队，致力于提供国内领先的高通量测序、生物信息分析及相关技术转化应用的科研服务。金锐生物聚焦于分子标记辅助育种、微生物组学和微生物生态制剂等前沿领域，将秉承专业、高效、高质量的服务理念，与您一同探索高通量测序技术在畜牧业领域的应用，共创科研成果及技术转化应用的辉煌。</p>
+                <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 col-md-2 col-md-offset-0 about-detail">
+                    <dl>
+                        <dt><i class="fa fa-hand-o-right" aria-hidden="true"></i>基因组学</dt>
+                        <dd>功能基因挖掘</dd>
+                        <dd>性状位点定位</dd>
+                        <dd>遗传进化研究</dd>
+                        <dd>分子标记辅助育种</dd>
+                    </dl>
+                    <dl>
+                        <dt><i class="fa fa-hand-o-right" aria-hidden="true"></i>微生物组学</dt>
+                        <dd>微生物多样性</dd>
+                        <dd>微生物功能挖掘</dd>
+                        <dd>动植物与微生物互作</dd>
+                    </dl>
+                    <dl>
+                        <dt><i class="fa fa-hand-o-right" aria-hidden="true"></i>转录组学</dt>
+                        <dd>调控机制研究</dd>
+                        <dd>环境适应性研究</dd>
+                        <dd>遗传进化研究</dd>
+                        <dd>基因定位</dd>
+                    </dl>
                 </div>
             </div>
         </div>
@@ -63,7 +97,7 @@
             </div>
         </div>
         <div class="section" id="contact">
-            <div class="col-xs-10 col-xs-offset-1 col-md-2 col-md-offset-2 detail">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-2 col-md-offset-2 detail">
                 <h1>联系我们</h1>
                 <address>
                     <h2><b>地址：</b>深圳市光明新区观光路3009号留创园403室</h2>
@@ -74,9 +108,7 @@
                     <h2><b>友情链接：</b><a href="http://realbio.cn">上海锐翌</a>&nbsp;&nbsp;<a href="http://www.chengnong.com">深圳金新农</a></h2>
                 </address>
             </div>
-            <div class="col-xs-12 col-md-5 col-md-offset-3 map">
-                <img data-src="{% static "img/contact01.png" %}" class="img-responsive hidden-xs hidden-sm">
-            </div>
+
         </div>
     </div>
 {% endblock %}
