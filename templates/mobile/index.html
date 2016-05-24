@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% load pages_tags mezzanine_tags i18n staticfiles %}
+
+{% block meta_title %}{% trans "Home" %}{% endblock %}
+{% block title %}{% trans "Home" %}{% endblock %}
+{% block main %}
+    <div id="fullpage">
+        <div class="section" id="slide" style="margin-top: 25px">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li><img data-src="{% static "img/mobile-slide1.jpg" %}" alt=""/></li>
+                    <li><img data-src="{% static "img/mobile-slide2.jpg" %}" alt=""/></li>
+                    <li><img data-src="{% static "img/mobile-slide3.jpg" %}" alt=""/></li>
+                    <li><img data-src="{% static "img/mobile-slide4.jpg" %}" alt=""/></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section" id="about"  style="margin-top: 25px">
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-1 col-sm-7 col-sm-offset-3 col-lg-9 col-lg-offset-3 about-slogns">
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-0 col-sm-8 col-sm-offset-0 col-lg-5 col-lg-offset-0 about-slogn">
+                            <h1>聚焦于畜牧业前沿领域</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-1 col-lg-6 col-lg-offset-1 about-slogn">
+                            <h1>拥有一流的软硬件设施平台</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-2 about-slogn">
+                            <h1>一支经验丰富的专业人才队伍</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-10 col-xs-offset-3 col-sm-8 col-sm-offset-3 col-lg-7 col-lg-offset-3 about-slogn">
+                            <h1>为您提供专业、高效、高质科研服务</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="service"  style="margin-top: 25px">
+            <div class="row">
+                <div class="col-xs-3 col-lg-3 service01">
+                    <img data-src="{% static "img/service_01.png" %}" class="img-responsive">
+                    <div class="content">
+                        <h2>基因组测序分析</h2>
+                        <h3>检测变异位点</h3>
+                        <h3>BSA性状定位</h3>
+                        <h3>挖掘功能基因</h3>
+                        <h3>群体进化研究</h3>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-lg-3 service02">
+                    <img data-src="{% static "img/service_02.png" %}" class="img-responsive">
+                    <div class="content">
+                        <h2>微生物组测序分析</h2>
+                        <h3>单菌基因组测序</h3>
+                        <h3>宏基因组测序</h3>
+                        <h3>16S/18S/ITS等扩增子测序</h3>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-lg-3 service03">
+                    <img data-src="{% static "img/service_03.png" %}" class="img-responsive">
+                    <div class="content">
+                        <h2>转录组测序分析</h2>
+                        <h3>真核转录组测序</h3>
+                        <h3>原核转录组测序</h3>
+                        <h3>LncRNA测序</h3>
+                        <h3>Small RNA测序</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="contact"  style="margin-top: 25px">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-3 col-lg-offset-2 detail">
+                <h1>联系我们</h1>
+                <address>
+                    <h2><b>地址：</b>深圳市光明新区观光路3009号留创园403室</h2>
+{#                    <h2><b>电话：</b>021-5100-1612</h2>#}
+                    <h2><b>邮箱：</b><a href="mailto:jinruibio@163.com">jinruibio@163.com</a> </h2>
+                    <h2><b>微信：</b>jinruibio</h2>
+                    <img data-src="{% static "img/weixin.jpg" %}" class="img-responsive">
+                    <h2><b>友情链接：</b><a href="http://realbio.cn">上海锐翌</a>&nbsp;&nbsp;<a href="http://www.chengnong.com">深圳金新农</a></h2>
+                </address>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+
+

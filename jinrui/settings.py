@@ -115,6 +115,11 @@ LANGUAGES = (
     ('en', _('English')),
 )
 
+DEVICE_USER_AGENTS = (
+    ("mobile", ("Android", "BlackBerry", "iPhone")),
+    ("desktop", ("Windows", "Macintosh", "Linux", "ipad")),
+)
+
 # A boolean that turns on/off debug mode. When set to ``True``, stack traces
 # are displayed for error pages. Should always be set to ``False`` in
 # production. Best set to ``True`` in local_settings.py

@@ -1,9 +1,7 @@
 body, p, a, h1, h2, h3, dt, dd {
     font-family: "Microsoft YaHei Light", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
-#slide {
-    padding-top: 25px;
-}
+
 #about, #service, #contact {
     margin-top: 54px;
 }
@@ -124,11 +122,6 @@ body, p, a, h1, h2, h3, dt, dd {
     color: #fff;
 }
 
-#contact {
-
-    background: url("../img/contact-back.jpg") no-repeat;
-}
-
 #contact .detail address h2 a:hover {
     font-weight: bold;
     text-decoration: none;
@@ -139,40 +132,66 @@ footer {
     padding: 20px 0;
 }
 
-
 @media (max-width: 768px) {
     #about {
         background: top 30% left 35% url("../img/about-back.jpg") no-repeat;
     }
+    #contact {
+        background: top 20% left 20% url("../img/contact-back.jpg") no-repeat;
+    }
     p {
         font-size: 2.5vw;
     }
-
     h1, .about-detail dt {
         font-size: 4vw;
     }
-
     .about-slogn h1 {
         font-size: 3.2vw;
     }
-
     h2, .about-detail dd {
         font-size: 3vw;
     }
-
     .about-detail {
         margin-top: 4%;
     }
-
     h3 {
         font-size: 2.5vw;
         font-weight: lighter;
     }
 }
-
 @media (max-width: 992px) and (min-width: 768px) {
     #about {
         background: top 10% left 20% url("../img/about-back.jpg") no-repeat;
+    }
+    #contact {
+        background: url("../img/contact-back.jpg") no-repeat;
+    }
+    .about-slogns {
+        margin-top: 7%;
+    }
+    h1, .about-detail dt {
+        font-size: 2.2vw;
+    }
+    h2, .about-detail dd {
+        font-size: 1.8vw;
+    }
+    .about-detail dd {
+        text-indent: 2em;
+    }
+    .about-detail {
+        margin-top: 4%;
+    }
+    h3 {
+        font-size: 1vw;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    #about {
+        background: top 10% left 20% url("../img/about-back.jpg") no-repeat;
+    }
+
+    #contact {
+        background: top 20% left 40% url("../img/contact-back.jpg") no-repeat;
     }
 
     .about-slogns {
@@ -199,26 +218,20 @@ footer {
         font-size: 1vw;
     }
 }
-
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     #about {
         background: url("../img/about-back.jpg") no-repeat;
     }
-
-    p {
-        font-size: 1.1em;
-        text-indent: 2em;
+    #contact {
+        background: url("../img/contact-back.jpg") no-repeat;
     }
-
     h1, dt {
-        font-size: 2.5em;
+        font-size: 2.2em;
         font-weight: bold;
     }
-
     h2, dd {
         font-size: 1.2em;
     }
-
     h3 {
         font-size: 1em;
         font-weight: bold;
