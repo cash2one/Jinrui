@@ -40,12 +40,24 @@ body, p, a, h1, h2, h3, dt, dd {
     color: #f78e21;
 }
 
-.about-slogn {
+.about-slogan {
     background-color: rgba(153, 153, 204, 0.6);
     color: #ffffff;
     margin-top: 2%;
 }
-
+.about-slogan1 {
+    color: #ffcc66;
+}
+.about-slogan2 {
+    color:#99cccc;
+}
+.about-slogan3 {
+    color: #ffffff;
+    background: rgba(255, 204, 102, 0.6);
+}
+.about-slogan4 {
+    color:#cc9999;
+}
 .about-detail {
     background-color: rgba(102, 204, 204, 0.6);
     border-radius: 10px;
@@ -134,57 +146,73 @@ footer {
 
 @media (max-width: 768px) {
     #about {
-        background: top 30% left 35% url("../img/about-back.jpg") no-repeat;
+        background: top 30% left 14% url("../img/about-back.jpg") no-repeat;
     }
+
     #contact {
         background: top 20% left 20% url("../img/contact-back.jpg") no-repeat;
     }
+
     p {
         font-size: 2.5vw;
     }
+
     h1, .about-detail dt {
         font-size: 4vw;
     }
-    .about-slogn h1 {
+
+    .about-slogan h1 {
         font-size: 3.2vw;
     }
+
     h2, .about-detail dd {
         font-size: 3vw;
     }
+
     .about-detail {
         margin-top: 4%;
     }
+
     h3 {
         font-size: 2.5vw;
         font-weight: lighter;
     }
 }
+
 @media (max-width: 992px) and (min-width: 768px) {
     #about {
         background: top 10% left 20% url("../img/about-back.jpg") no-repeat;
     }
+
     #contact {
         background: url("../img/contact-back.jpg") no-repeat;
     }
-    .about-slogns {
+
+    .about-slogans {
         margin-top: 7%;
     }
+
     h1, .about-detail dt {
         font-size: 2.2vw;
     }
+
     h2, .about-detail dd {
         font-size: 1.8vw;
     }
+
     .about-detail dd {
         text-indent: 2em;
     }
+
     .about-detail {
         margin-top: 4%;
     }
+
     h3 {
         font-size: 1vw;
     }
 }
+
 @media (min-width: 992px) and (max-width: 1200px) {
     #about {
         background: top 10% left 20% url("../img/about-back.jpg") no-repeat;
@@ -194,7 +222,7 @@ footer {
         background: top 20% left 40% url("../img/contact-back.jpg") no-repeat;
     }
 
-    .about-slogns {
+    .about-slogans {
         margin-top: 7%;
     }
 
@@ -218,9 +246,13 @@ footer {
         font-size: 1vw;
     }
 }
+
 @media (min-width: 1200px) {
     #about {
         background: url("../img/about-back.jpg") no-repeat;
+    }
+    .about-slogans {
+        margin-bottom:20%;
     }
     #contact {
         background: url("../img/contact-back.jpg") no-repeat;
