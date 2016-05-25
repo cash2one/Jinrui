@@ -217,6 +217,9 @@ footer {
         font-size: 2.5em;
         font-weight: bold;
     }
+    .service01>img, .service02>img, .service03>img {
+        margin-top: -6%;
+    }
     #contact {
         background: url("../img/contact-back.jpg") no-repeat;
     }
