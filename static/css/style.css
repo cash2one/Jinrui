@@ -211,7 +211,6 @@ footer {
     }
     .about-slogans {
         margin-top:5%;
-        z-index: 1;
     }
     .about-angle {
         color: #ffcc66;
@@ -220,7 +219,6 @@ footer {
     }
     .about-detail>img {
         margin-left:-20%;
-        z-index: 0;
     }
     .service01>img, .service02>img, .service03>img {
         margin-top: -6%;
