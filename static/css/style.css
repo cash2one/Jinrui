@@ -54,9 +54,7 @@ body, p, a, h1, h2, h3, dt, dd {
     color:#99cccc;
 }
 .about-slogan3 {
-    color: #ffffff;
-    background: rgba(255, 204, 102, 0.8);
-    float: left;
+    color: #ffcc66;
 }
 .about-slogan4 {
     color: #cc7c79;
@@ -133,7 +131,7 @@ footer {
 
 @media (max-width: 768px) {
     #about {
-        background: top 30% left 14% url("../img/about-back.jpg") no-repeat;
+        background: top 40% left 25% url("../img/about-back.jpg") no-repeat;
     }
     #contact {
         background: top 20% left 20% url("../img/contact-back.jpg") no-repeat;
