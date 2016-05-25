@@ -5,7 +5,9 @@ body, p, a, h1, h2, h3, dt, dd {
 #about, #service, #contact {
     margin-top: 54px;
 }
-
+#about {
+    background: #efe3f0;
+}
 .navbar-default .navbar-brand {
     color: #f78e21;
     padding: 0px 20px;
@@ -53,26 +55,11 @@ body, p, a, h1, h2, h3, dt, dd {
 }
 .about-slogan3 {
     color: #ffffff;
-    background: rgba(255, 204, 102, 0.6);
+    background: rgba(255, 204, 102, 0.8);
+    float: left;
 }
 .about-slogan4 {
-    color:#cc9999;
-}
-.about-detail {
-    background-color: rgba(102, 204, 204, 0.6);
-    border-radius: 10px;
-    box-shadow: 5px 5px 1px #666699;
-    padding: 1%;
-}
-
-.about-detail dt {
-    color: #fff;
-}
-
-.about-detail dd {
-    font-weight: bold;
-    color: #fff;
-    text-indent: 4em;
+    color: #cc7c79;
 }
 
 #service {
@@ -148,7 +135,6 @@ footer {
     #about {
         background: top 30% left 14% url("../img/about-back.jpg") no-repeat;
     }
-
     #contact {
         background: top 20% left 20% url("../img/contact-back.jpg") no-repeat;
     }
@@ -181,15 +167,11 @@ footer {
 
 @media (max-width: 992px) and (min-width: 768px) {
     #about {
-        background: top 10% left 20% url("../img/about-back.jpg") no-repeat;
+        background: top 10% left 10% url("../img/about-back.jpg") no-repeat;
     }
 
     #contact {
         background: url("../img/contact-back.jpg") no-repeat;
-    }
-
-    .about-slogans {
-        margin-top: 7%;
     }
 
     h1, .about-detail dt {
@@ -223,7 +205,7 @@ footer {
     }
 
     .about-slogans {
-        margin-top: 7%;
+        margin-bottom: 17%;
     }
 
     h1, .about-detail dt {
@@ -252,7 +234,7 @@ footer {
         background: url("../img/about-back.jpg") no-repeat;
     }
     .about-slogans {
-        margin-bottom:20%;
+        margin-top:5%;
     }
     #contact {
         background: url("../img/contact-back.jpg") no-repeat;
