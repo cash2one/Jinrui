@@ -229,6 +229,12 @@ footer {
         font-size: 2.2em;
         font-weight: bold;
     }
+    .about-slogans h1 {
+        font-size:2.5em;
+    }
+    .about-slogans h2 {
+        font-size:1.5em;
+    }
     h2 {
         font-size: 1.2em;
     }
@@ -236,4 +242,7 @@ footer {
         font-size: 1em;
         font-weight: bold;
     }
+}
+#baidu {
+    display: none;
 }
